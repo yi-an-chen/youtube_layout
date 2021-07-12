@@ -1,0 +1,123 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+    background-color: #ccc;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.logo{
+    padding-left: 10px;
+}
+
+.search_account{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.account{
+    padding-left: 20px;
+}
+
+.fa-youtube, .txt-youtube, .fa-search, .fa-user-circle{
+    font-size: 24px;
+}
+
+/* nav */
+nav{
+    padding: 5px;
+    background-color: #faa;
+}
+
+nav{
+    height: 39px;
+}
+
+nav button{
+    border: unset;
+    padding: 7px 13px;
+    border-radius: 15px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+/* list */
+
+.list>div{
+    position: relative;
+}
+
+.list img{
+    max-width: 100%;
+}
+
+.list span{
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+    background-color: #555;
+    color: #fff;
+    padding: 3px;
+}
+
+/* footer */
+
+footer{
+    position: sticky;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer button{
+    border: unset;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 0 5px;
+}
+
+@media screen and (min-width:768px) {
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list div{
+        width: 49%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .list div{
+        width: 33%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .list div{
+        width: 24.5%;
+    }
+}
